@@ -1,0 +1,13 @@
+# 统一为 LF，避免 CRLF 破坏 shell 脚本的可执行性
+* text=auto eol=lf
+
+# 明确标记二进制文件
+*.png  binary
+*.rds  binary
+*.gz   binary
+*.xlsx binary
+*.pdf  binary
+
+# Windows 用户可用的批处理不受影响
+*.bat text eol=crlf
+*.cmd text eol=crlf

@@ -1,0 +1,28 @@
+strategy,level,n_feature,pooled_auc,lo,hi,I2
+REF_IFNG6,Gene expression,6,0.6676,0.5728,0.7505,97.5
+F_TIS_18,Gene expression,18,0.6379,0.5696,0.701,94.7
+REF_AYERS,Gene expression,19,0.6366,0.5663,0.7016,95
+COR_top15,Gene expression,15,0.6268,0.5486,0.6988,95.9
+COR_top20,Gene expression,20,0.6268,0.5402,0.7059,96.6
+COR_top30,Gene expression,30,0.6256,0.5404,0.7038,96.5
+EN_a0.5_1se,Gene expression,109,0.6098,0.5236,0.6896,96.5
+EN_a0.5_min,Gene expression,110,0.608,0.5215,0.6882,96.5
+EN_a1.0_min,Gene expression,27,0.6019,0.5391,0.6615,93.2
+EN_a1.0_1se,Gene expression,26,0.6011,0.5397,0.6594,92.8
+U_top50,Gene expression,50,0.5919,0.5166,0.663,95.2
+REF_IFNG_HALL,Gene expression,199,0.5771,0.5058,0.6453,94.6
+COR_top10,Gene expression,10,0.5741,0.5078,0.6378,92.4
+TrainIMvigor210,Published reference / trained,8,0.5731,0.5036,0.6398,86.7
+U_top20,Gene expression,20,0.5682,0.4979,0.6358,94.4
+L_pheno_min,Gene expression,110,0.5617,0.5185,0.604,84.6
+V6_corr_top20,Gene-set enrichment score,20,0.5571,0.5263,0.5874,69.3
+L_pheno_1se,Gene expression,69,0.5551,0.5194,0.5903,77
+V3b_lasso_quartile_min,Gene-set enrichment score,20,0.5481,0.5168,0.579,69.8
+IMMUNE_ALL,Gene expression,9661,0.548,0.4962,0.5988,89.4
+V5_univ_top20,Gene-set enrichment score,20,0.5475,0.522,0.5726,54.1
+V3_lasso_quartile_1se,Gene-set enrichment score,18,0.5474,0.5157,0.5787,70.6
+V1_global_immune,Gene-set enrichment score,110,0.5419,0.5117,0.5717,67.3
+V2_lasso_k2,Gene-set enrichment score,40,0.5342,0.4957,0.5723,80.1
+V4_pca1,Gene-set enrichment score,110,0.5249,0.4883,0.5612,78.3
+L_quart_min,Gene expression,51,0.5226,0.465,0.5795,91.6
+L_quart_1se,Gene expression,48,0.5194,0.463,0.5753,91.2

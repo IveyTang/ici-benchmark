@@ -1,0 +1,48 @@
+Computational environment snapshot
+==================================
+Generated: 2026-10-13
+
+R
+-
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32 (Windows 11)
+
+Direct dependencies (versions used to produce the reported results)
+-------------------------------------------------------------------
+Package                 Version    Role in the pipeline
+----------------------  ---------  -------------------------------------------
+data.table              1.18.6.1   all data manipulation
+matrixStats             1.5.0      variance filtering of expression matrices
+GSVA                    2.6.10     GSVA / ssGSEA enrichment scores
+ConsensusClusterPlus    1.76.0     consensus clustering of TCGA-HNSC (k = 2..6)
+glmnet                  5.1        LASSO / elastic-net logistic regression
+pROC                    1.19.1     AUC and DeLong confidence intervals
+metafor                 5.2.1      random-effects pooling
+survival                3.8.6      Kaplan-Meier and Cox models
+openxlsx                4.2.9      reading the GSE78220 FPKM workbook
+msigdbr                 26.1.1     MSigDB C7 / Hallmark gene-set retrieval
+BiocParallel            1.46.0     parallel backend used by GSVA
+
+Notes
+-----
+* The pipeline otherwise requires only base R packages (stats, graphics,
+  grDevices, parallel).
+* org.Hs.eg.db is NOT used: gene identifiers are mapped with the NCBI
+  Homo_sapiens.gene_info table, whose Entrez-to-symbol and Ensembl-to-symbol
+  maps are cached by 01_prep.R.
+* effsize is NOT used: the Cohen's d reported in fig7 is computed directly,
+  with Hedges' correction applied by hand.
+* CIBERSORT and LM22 are NOT used by any script in this repository.
+  Signature-matrix deconvolution was evaluated and rejected during method
+  development (see docs/PIPELINE.md, "Rejected approach"); fig7 reports a
+  marker-gene panel instead.
+* On Windows, parallel::mclapply is unavailable; any parallelism must use
+  parallel::makeCluster(type = "PSOCK").
+
+Installation
+------------
+    install.packages(c("data.table", "matrixStats", "glmnet", "pROC",
+                       "metafor", "survival", "openxlsx", "msigdbr"))
+    if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+    BiocManager::install(c("GSVA", "ConsensusClusterPlus", "BiocParallel"))

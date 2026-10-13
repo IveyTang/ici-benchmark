@@ -1,0 +1,36 @@
+{
+  "title": "Benchmarking transcriptomic immune signatures for ICI response: analysis code and derived results",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "version": "1.0.0",
+  "description": "<p>Analysis code and derived results for the manuscript <em>Expression-level immune signatures outperform gene-set enrichment scores for predicting immune checkpoint inhibitor response: a cross-cohort benchmark in 591 patients</em>.</p><p>The repository benchmarks 27 strategies for constructing a transcriptomic immune score under one fixed scoring, discrimination and pooling procedure across six independent ICI-treated cohorts (591 patients, 127 responders), with TCGA-HNSC (520 primary tumours, 221 death events) as the discovery cohort. Scores built from gene-level expression consistently outperformed scores built from gene-set enrichment statistics (pooled AUC 0.519-0.668 versus 0.525-0.557).</p><p>No new data were generated; all inputs are public (TCGA-HNSC via the UCSC Xena / GDC hub, GEO GSE159067 / GSE176307 / GSE91061 / GSE78220 / GSE135222, and IMvigor210 via IMvigor210CoreBiologies). Raw data are not redistributed; a download script retrieves every input from its original archive. Two scripts were re-run and reproduced their shipped outputs byte-for-byte.</p><p>Code is released under the MIT licence; derived results under CC BY 4.0. Original source data remain subject to the terms of their original archives.</p>",
+  "creators": [
+    {
+      "name": "Tang, Xi",
+      "affiliation": "Department of Head and Neck Surgery, Chongqing University Cancer Hospital, Chongqing, China",
+      "orcid": "0000-0003-2740-1368"
+    },
+    {
+      "name": "Zhang, Yulian",
+      "affiliation": "Department of Head and Neck Surgery, Chongqing University Cancer Hospital, Chongqing, China"
+    },
+    {
+      "name": "He, Yungang",
+      "affiliation": "Department of Radiation Oncology, Chongqing University Cancer Hospital, Chongqing, China"
+    }
+  ],
+  "keywords": [
+    "immune checkpoint inhibitor",
+    "biomarker benchmarking",
+    "head and neck squamous cell carcinoma",
+    "gene expression signature",
+    "GSVA",
+    "ssGSEA",
+    "reproducibility",
+    "transcriptomics"
+  ],
+  "related_identifiers": [],
+  "notes": "Version 1.0.0 corresponds to the manuscript submitted to Journal of Translational Medicine. Replace <code>related_identifiers</code> with the manuscript DOI once it is assigned."
+}

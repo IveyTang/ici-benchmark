@@ -1,0 +1,9 @@
+variable,immune_activated,immune_cold,P
+"Patients, n",269,251,—
+"Age, years, median (IQR)",62 (55–71),59 (52–66),4.8e-04
+"Male, %",64.3,84.1,5.1e-07
+"Stage IV, %",50.6,51.8,8.5e-01
+"TMB, mut/Mb, median (IQR)",2.97 (1.89-4.17),3.32 (2.05-5.45),4.2e-02
+"CD274 (PD-L1), log2(FPKM+1), median",2.13,1.41,1.1e-11
+"OS events, n (%)",119 (44.4),102 (40.6),7.0e-01
+"Median follow-up, months",21.3,21.2,—
