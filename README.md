@@ -5,8 +5,8 @@ Analysis code and derived results for:
 > **Expression-level immune signatures outperform gene-set enrichment scores for
 > predicting immune checkpoint inhibitor response: a cross-cohort benchmark in
 > 591 patients**
-> Xi Tang, Yulian Zhang, Yungang He
-> Department of Head and Neck Surgery, Chongqing University Cancer Hospital
+> Yanguang Zhao, Hong Jiang, Jing Yao, Qilan Ma, Jingyi Yu, Yungang He, Yulian Zhang and Xi Tang
+> Department of Head and Neck Oncology, Chongqing University Cancer Hospital
 
 ![benchmark](results/figures/fig6_benchmark_strategies.png)
 
